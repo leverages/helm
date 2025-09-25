@@ -3,6 +3,31 @@ entries:
   postgresql:
   - apiVersion: v2
     appVersion: "16"
+    created: "2025-09-25T12:43:41.50914783Z"
+    description: A Helm chart for PostgreSQL database with support for local and cloud
+      deployments
+    digest: d518a9c24a9b955e984202c4a2c06cf94648b42b512678100cccf82f025438d1
+    home: https://github.com/leverages/helm
+    icon: https://www.postgresql.org/media/img/about/press/elephant.png
+    keywords:
+    - postgresql
+    - database
+    - sql
+    maintainers:
+    - name: Leverages
+      url: https://github.com/leverages
+    - email: sanghyuk.lee@leverages.jp
+      name: Sanghyuk Lee
+    name: postgresql
+    sources:
+    - https://github.com/leverages/helm/tree/main/charts/postgresql
+    - https://github.com/postgres/postgres
+    type: application
+    urls:
+    - https://github.com/leverages/helm/releases/download/postgresql-0.1.2/postgresql-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: "16"
     created: "2025-09-25T12:03:01.096878363Z"
     description: A Helm chart for PostgreSQL database with support for local and cloud
       deployments
@@ -46,4 +71,4 @@ entries:
     urls:
     - https://github.com/leverages/helm/releases/download/postgresql-0.1.0/postgresql-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-25T12:03:01.096886518Z"
+generated: "2025-09-25T12:43:41.509160553Z"
