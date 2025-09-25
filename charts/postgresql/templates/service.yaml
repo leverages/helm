@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "postgresql.fullname" . }}
+  labels:
+    {{- include "postgresql.labels" . | nindent 4 }}
+spec:
+  {{- if eq .Values.deploymentType "local" }}
+  type: {{ .Values.local.service.type }}
+  ports:
+    - port: {{ .Values.local.service.port }}
+      targetPort: postgresql
+      protocol: TCP
+      name: postgresql
+  {{- else if eq .Values.deploymentType "cloud" }}
+  type: {{ .Values.cloud.service.type }}
+  ports:
+    - port: {{ .Values.cloud.service.port }}
+      targetPort: postgresql
+      protocol: TCP
+      name: postgresql
+  {{- if .Values.cloud.service.loadBalancerIP }}
+  loadBalancerIP: {{ .Values.cloud.service.loadBalancerIP }}
+  {{- end }}
+  {{- if .Values.cloud.service.loadBalancerSourceRanges }}
+  loadBalancerSourceRanges:
+    {{- range .Values.cloud.service.loadBalancerSourceRanges }}
+    - {{ . }}
+    {{- end }}
+  {{- end }}
+  {{- end }}
+  selector:
+    {{- include "postgresql.selectorLabels" . | nindent 4 }}

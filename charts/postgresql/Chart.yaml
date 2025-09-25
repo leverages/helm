@@ -1,0 +1,17 @@
+apiVersion: v2
+name: postgresql
+description: A Helm chart for PostgreSQL database with support for local and cloud deployments
+type: application
+version: 0.1.0
+appVersion: "16"
+keywords:
+  - postgresql
+  - database
+  - sql
+home: https://www.postgresql.org/
+icon: https://www.postgresql.org/media/img/about/press/elephant.png
+sources:
+  - https://github.com/postgres/postgres
+maintainers:
+  - name: Leverages
+    url: https://github.com/leverages
