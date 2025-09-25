@@ -2,7 +2,7 @@
 version: 0.1.1
 name: postgresql-helm
 category: database
-displayName: postgresql-helm
+displayName: postgresql
 createdAt: 2025-09-25T00:00:00Z
 description: A simple PostgreSQL Helm Chart created by Leverages
 logoURL: https://www.postgresql.org/media/img/about/press/elephant.png
