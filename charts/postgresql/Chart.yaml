@@ -2,7 +2,7 @@ apiVersion: v2
 name: postgresql
 description: A Helm chart for PostgreSQL database with support for local and cloud deployments
 type: application
-version: 0.1.1
+version: 0.1.2
 appVersion: "16"
 keywords:
   - postgresql
