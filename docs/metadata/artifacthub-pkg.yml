@@ -18,6 +18,8 @@ keywords:
   - database
   - sql
 maintainers:
+  - name: Leverages
+    url: https://github.com/leverages
   - name: Sanghyuk Lee
     email: sanghyuk.lee@leverages.jp
 provider:
