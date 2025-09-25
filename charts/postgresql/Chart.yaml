@@ -8,9 +8,10 @@ keywords:
   - postgresql
   - database
   - sql
-home: https://www.postgresql.org/
+home: https://github.com/leverages/helm
 icon: https://www.postgresql.org/media/img/about/press/elephant.png
 sources:
+  - https://github.com/leverages/helm/tree/main/charts/postgresql
   - https://github.com/postgres/postgres
 maintainers:
   - name: Leverages
