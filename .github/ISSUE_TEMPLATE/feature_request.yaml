@@ -20,6 +20,7 @@ body:
     multiple: true
     options:
       - postgresql
+      - other
   validations:
     required: true
 
